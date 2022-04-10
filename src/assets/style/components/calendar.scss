@@ -1,0 +1,146 @@
+.calendar {
+  .fc {
+    background: #FAFAFA;
+  }
+  .fc-header-toolbar {
+    background: #fff;
+    padding-bottom: 20px !important;
+    margin: 0 !important;
+  }
+  .fc-toolbar {
+    margin: 0;
+    padding: 0 45px;
+  }
+  .fc-toolbar-chunk:last-child{
+    .fc-button-group {
+      width: 317px;
+      height: 45px;
+      margin-left: 20px;
+      border-radius: 10px !important;
+      border:none;
+    }
+  }
+  button[title='Next month'] {
+    margin-right: 20px;
+    border:none;
+    border-radius: 10px !important;
+  }
+  button[title='Previous month'] {
+    margin-right: 10px;
+    border-radius: 10px !important;
+    border:none;
+  }
+  .fc-button-primary{
+    background: #F6F6F6 !important;
+    color: #000000 !important;
+  }
+  .fc-icon {
+    color: #000000;
+  }
+  .fc-scrollgrid-sync-inner{
+    display: flex;
+    height: 75px;
+  }
+  .fc-scrollgrid  .fc-scrollgrid-liquid {
+    border:none;
+  }
+  .fc-scrollgrid-sync-inner{
+    display: flex;
+    height: 75px;
+  }
+  thead{
+    tr{
+      th {
+        border: none !important;
+        border-bottom: 1px solid #F1F1F1 !important;
+      }
+    }
+    .fc-col-header-cell-cushion {
+      font-family: 'Illuminate', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #394453;
+      padding: 14px !important;
+    }
+  }
+  tbody {
+    tr{
+      td{
+        border:1px solid #F1F1F1;
+      }
+    }
+    .fc-view-harness .fc-view-harness-active {
+      width: 100% !important;
+    }
+    table {
+      width:100% !important;
+    }
+    .fc-day-sat, .fc-day-sun {
+      background: url("../../../../public/Pattern.svg");
+    }
+    .fc-daygrid-day-number{
+      font-family: 'Illuminate', serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #535E6E;
+      padding: 14px !important;
+    }
+  }
+  .fc-daygrid-day-events {
+    margin-top:40px !important;
+
+  }
+  .fc-h-event {
+    background: transparent;
+    border: none;
+  }
+  .fc-daygrid-event {
+    margin: 0 !important;
+    padding: 0 6px;
+  }
+  .events {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto 5px;
+    height: 32px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(116, 137, 158, 0.16);
+    border-radius: 5px;
+    overflow: hidden;
+    &__content{
+      visibility: visible !important;
+      display: flex;
+      align-items: center;
+
+      .process {
+        width:6px;
+        height:32px;
+        &__done{
+          background: #ddd;
+        }
+        &__pending {
+          background: red;
+        }
+        &__future {
+          background: #4CAF50;
+        }
+      }
+    }
+    .eventIcons {
+      padding-right: 5px;
+      width: 19px;
+      height:19px;
+      svg{
+        width:19px !important;
+        height: 19px !important;
+      }
+    }
+
+  }
+}

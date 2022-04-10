@@ -1,0 +1,17 @@
+.detail-desc {
+    img {
+        height: auto;
+    }
+}
+.preview-desc {
+    word-break: break-word;
+}
+
+.post-img img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog-post {
+    min-height: 620px;
+}

@@ -1,0 +1,42 @@
+.social-auth {
+    .social-auth-list {
+        margin-top: 10px;
+
+        .social-item {
+            font-size: 20px;
+            margin: 0 10px;
+
+            &.google {
+                color: #db4a39;
+            }
+
+            &.facebook {
+                color: #3b5999;
+            }
+
+            &.vk {
+                color: #4c75a3;
+            }
+
+            &.mailru {
+                color: #fc2c38;
+            }
+
+            &.instagram {
+                color: #fb3958;
+            }
+
+            &.yandex {
+                color: #FF0000;
+            }
+
+            &.linkedin {
+                color: #2867B2;
+            }
+
+            &.twitter {
+                color: #1DA1F2;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.button {
+  border: 0;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 28px;
+  text-align: center;
+  background: $buttonBgColor;
+  @include transition(all, .2);
+  &.disabled,
+  &:disabled,
+  &[disabled] {
+    background: $buttonBgColorDisabled !important;
+    color: #fff !important;
+    border: none !important;
+    &:hover {
+      background: $buttonBgColorDisabled;
+      box-shadow: none;
+    }
+  }
+  &.button-bordered {
+    border-radius: 20px;
+  }
+  &.button-outlined {
+    background: #fff;
+    color: $buttonBgColor;
+    border: 2px solid $buttonBgColor;
+    padding: 8px 28px;
+    &:hover {
+      background: #881fd9;
+      @include transition(all, .2);
+    }
+  }
+  &.button-outlined-1 {
+    color: #000;
+    font-size: 14px;
+    background: #fff;
+    padding: 8px 15px;
+    border: 1px solid #afafaf;
+    &.small {
+      padding: 0 10px;
+    }
+    &:hover {
+      background: #d2d2d2;
+      @include transition(all, .2);
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    @include transition(all, .2);
+    color: #fff;
+    background: $buttonBgColorHover;
+    //@include createShadow(0, 0, .70);
+  }
+}
+
+a {
+  &.button {
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

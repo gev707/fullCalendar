@@ -1,0 +1,7 @@
+@mixin createShadow($x, $y, $size) {
+  box-shadow: $x $y 1rem rgba(0, 0, 0, $size);
+}
+
+@mixin transition($property, $time) {
+  transition: $property $time+s ease;
+}

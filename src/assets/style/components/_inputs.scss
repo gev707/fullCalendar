@@ -1,0 +1,140 @@
+input, .input {
+  color: #000;
+  outline: none;
+  padding: 10px;
+  display: block;
+  font-size: 14px;
+  border: 1px solid #d881ba;
+  @include transition(all, .4);
+  &.input-bordered {
+    border-radius: 5px;
+  }
+  &:focus {
+    outline: none;
+    border-color: #de199b;
+    @include transition(all, .4);
+    box-shadow: 0 0 5px 0 #de199b54;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:after {
+    color: #be1f97;
+  }
+}
+
+.custom-select {
+  cursor: pointer;
+  border: 1px solid #d881ba;
+  @include transition(all, .4);
+  background: #fff url("../../public/img/arrow.png") no-repeat right .75rem center;
+  &:focus {
+    border: 1px solid #de199b;
+    @include transition(all, .4);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 5px #fb00ff;
+  }
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.custom-checkbox {
+  .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+  }
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #bf2097;
+  }
+  .custom-control-label {
+    line-height: initial;
+    &::before, &::after {
+      top: 0;
+    }
+  }
+}
+
+.menu {
+  .nav-link {
+    color: #3b0da0;
+    font-weight: bold;
+  }
+}
+
+.organizations, .user {
+  .nav-link {
+    color: #000 !important;
+    border: none !important;
+    &.active {
+      font-weight: bold;
+      border-bottom: 2px solid #be1f97 !important;
+    }
+  }
+}
+
+.custom-select {
+  color: #000;
+}
+
+.close {
+  &:focus {
+    outline: none;
+  }
+}
+
+.slider.slider-horizontal {
+  width: 100%;
+}
+
+.slider-selection {
+  background-image: linear-gradient(to bottom, #bf2097 0, #bf2097 100%);
+}
+
+.slider-handle {
+  border: 2px solid #bf2097;
+  background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 100%);
+}
+
+.slider-track {
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.scrollbar {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  &.scrollbar-auto {
+    overflow-y: auto;
+  }
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 7px;
+  background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #c3c3c3;
+}
+
+.custom-file-label {
+  border: 1px solid #d881ba;
+  &:after {
+    color: #495057;
+    content: "Выбрать";
+    border-left: 1px solid #d881ba;
+  }
+}
+
+.tooltip {
+  &.in {
+    opacity: .9;
+  }
+}
